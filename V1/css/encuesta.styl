@@ -1,0 +1,217 @@
+gris-oscuro = #3536
+
+body
+	font-size 16px
+	font-family cursive
+header
+	background #DE3737
+	display table
+	height 5em
+	border-bottom 5px solid rgba(0, 0, 0, .5)
+	margin 0
+	padding 0
+	width 100%
+	
+	
+	h1
+		color white
+		display table-cell
+		font-family: 'Kaushan Script', cursive;
+		font-size 1.5em
+		padding 0 .5em
+		vertical-align middle
+		text-shadow 2px 0px 0px black
+
+.contenedor
+	background #4D93A3
+	margin 0 auto
+	max-width 980px
+	min-width 320px
+	padding-bottom 0.15em
+
+
+	h2
+		background rgb(206,220,231)
+		background -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 90%)
+		background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(90%,rgba(89,106,114,1)))
+		background -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 90%)
+		background -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 90%)
+		background -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 90%)
+		background linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 90%)
+		border-radius 0 45px 0 0
+		margin 0
+		padding 0.25em .5em
+		font-family: 'Kaushan Script', cursive;
+		font-size 1.25em
+
+	h2, h3, .programas label
+		&:hover
+			cursor pointer
+	h3
+		border-bottom 1px dashed gray
+		font-family Kalam
+		font-size 1.1em
+		margin 0 0 .5em 0
+		padding 0.25em 1.25em
+			
+	.autoevaluacion
+		height 2px
+		overflow hidden
+	
+		#fr-cuestionario
+			background gray
+			border 2px solid white
+			border-radius 10px
+			box-shadow inset 4px 4px 5px 0px rgba(50, 50, 50, 0.75)
+			margin 0 auto
+			padding 0.5em
+			font-family Kalam
+			font-size .9em
+			#escuela
+				width 95%
+			#nombre, #curso, #semestre
+				width 95%
+			#num-est
+				width 50%
+				color green
+			.datos-gral
+				margin 0
+				padding 0
+				list-style-type none
+				li
+					width 100%
+					display block
+				li:last-child
+					width 40%
+					display inline-block
+				li:nth-child(4)
+					display inline-block
+					width 55%
+					
+		.actividades
+			font-family Kalam
+			margin 0
+			padding 0 .5em
+			
+			p 
+				margin 0
+				padding 0 0.5em
+			p:first-child
+				font-weight  bold
+				text-align center
+				background rgba(51,80,51,0.4)
+			p:nth-child(2)
+				text-align justify
+				background gray
+			p:nth-child(3)
+				background rgba(51,80,51,0.4)
+				font-weight  bold
+			ol
+				background rgba(51,120,51,0.4)
+				margin 0
+				padding 0 
+				list-style-type none
+				text-align justify
+				li
+					padding .25em 0.5em
+					border-bottom 1px solid white
+					&:last-child
+						border-bottom none
+			select
+				padding 0
+				height 1.8em
+				font-size .8em
+				background gris-oscuro
+				border-radius .80em
+				line-height 10px
+
+		.datos, .programas, .actividades
+			height 0px
+			margin 0
+			padding 0em 0.5em
+			overflow hidden
+
+		.programas
+			.c-01, .c-02
+				height 2.5em
+				overflow hidden
+		
+	.competencias
+		margin 0 0.5em
+		border-radius 12px
+		box-shadow 4px 4px 5px 0px rgba(50, 50, 50, 0.75)
+		margin-bottom 1em
+		padding 0
+					
+	.oculto
+		display none
+
+	.oculto:checked
+		+ .actividades
+		+ .introduccion
+		+ .autoevaluacion
+		+ .datos
+		+ .programas
+		+ .c-01, + .c-02
+
+			height 100%
+	
+	.introduccion
+		height 2px
+		overflow hidden
+		
+		figure
+			margin 0
+			padding 0
+			text-align center
+		
+			.diagrama
+				border 2px solid white
+				border-radius 10px
+				box-shadow inset 4px 4px 5px 0px rgba(50, 50, 50, 0.75)
+				margin .5em 0 0 0
+				width 300px
+		.parrafos
+			margin 0
+			padding 0 .5em
+			
+			p, .lista
+				margin 0
+				font-family Kalam
+				text-align justify
+	
+	
+	.tabla
+		font-family Kalam
+		width 100%
+		tr:nth-child(3)
+			th:first-child
+				border-right 1px solid white
+		tr:nth-child(n+4)
+				border-bottom 1px solid white
+		
+		tr:first-child
+			th
+				border-radius 10px 10px 0 0 
+		tr:last-child
+			border-bottom 0px solid white
+			td:first-child
+				color yellow
+				border-radius 0px 0px 0px 10px
+			td:last-child
+				border-radius 0px 0px 10px 0px
+		th, td
+			padding .5em
+		td[colspan="2"]
+			background gray
+		td 
+			background rgba(51,120,51,0.4)
+			text-align justify	
+		
+		th 
+			background gris-oscuro
+			color white
+		.col-dominio
+			background gray
+			border-left 1px solid white
+		

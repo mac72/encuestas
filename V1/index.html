@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encuestas</title>
+	<link href='http://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link rel="stylesheet" type="text/css" href="css/encuesta.css"/>
+</head>
+<body>
+	<header>
+		<h1>
+			Instrumento de Autoevaluación
+		</h1>
+	</header>
+
+	<div class="contenedor">
+		<label for="lb-intro"><h2>Introducción</h2></label>
+		<input type="checkbox" id="lb-intro" class="oculto" />
+		<section class="introduccion">
+			<figure>
+				<img class="diagrama" src="img/diagrama2.png" alt="diagrama"/>
+			</figure>
+
+			<article class="parrafos">
+				<p><strong>Documento elaborado como parte del Proyecto de Evaluación Diagnostica de la calidad educativa en E.N. DEGESPE 2013.</strong>
+				</p>
+				<p>La propuesta cuenta con varias cualidades. Por una parte, tiene un enfoque centrado en el aprendizaje. También, acentúa tres actividades  que el Grupo Reflexivo considera fundamentales:</p>
+				<ol class="lista">
+					<li>el desarrollo de la investigación educativa; </li>
+					<li>el papel de tutor del profesor de la escuela normal;</li>
+					<li>la participación activa  en procesos de mejora continua de la calidad de la escuela normal.</li>
+				</ol>
+				 <p>Además, recupera una visión más sistémica de la práctica  profesional del docente de la escuela normal.
+				</p>
+				<p>El instrumento está diseñado para que los docentes de una Escuela Normal puedan realizar una autoevaluación de su propia práctica  profesional. Se compone por 11 competencias profesionales, desagregadas en unidades de competencia que son las que se evalúan con una escala tipo Likert.
+				</p>
+				<p><strong>Proposito:</strong> Obtener información sobre el desempeño individual y colectivo del docente, que permita el mejoramiento progresivo en las áreas y equipos de trabajo, sus funciones y organización; el desarrollo de los procesos y la calidad de los resultados, las estrategias seguidas y los recursos utilizados en su práctica.
+				</p>
+			</article>
+		</section>
+		<label for="lb-auto"><h2>Autoevaluación</h2></label>
+		<input type="checkbox" id="lb-auto" class="oculto" />
+		<section class="autoevaluacion">
+			<label for="lb-datos"><h3>Datos generales</h3></label>
+			<input type="checkbox" id="lb-datos" class="oculto" />
+			<section class="datos">
+				<form action="" id="fr-cuestionario">
+					<ul class="datos-gral">
+						<li>
+							<label>Escuela</label><br>
+							<select name="escuela" id="escuela">
+								<option value="" selected disabled>Elija su escuela</option>
+								<option value="01">BENEMÉRITA ESCUELA NORMAL "PROFRA. PILAR ELENA FLORES ACUÑA" DEL INSTITUTO CAMPECHANO </option>
+								<option value="02">ESCUELA NORMAL DE EDUCACION PREESCOLAR LICDA. MIRIAM CUEVAS TRUJILLO INSTITUTO CAMPECHANO</option>
+								<option value="03">ESCUELA NORMAL DE EDUCACIÓN PREESCOLAR PARTICULAR INCORPORADA MARÍA DOLORES RAMÍREZ</option>
+								<option value="04">ESCUELA NORMAL DE EDUCACION PREESCOLAR PROFR. PASTOR RODRIGUEZ ESTRADA</option>
+								<option value="05">ESCUELA NORMAL DE EDUCACION PREESCOLAR PROFR. PASTOR RODRIGUEZ ESTRADA (MÓDULO HECELCHAKÁN)</option>
+								<option value="06">ESCUELA NORMAL DE LICENCIATURA EN EDUCACION ESPECIAL PROBLEMAS DE APRENDIZAJE</option>
+								<option value="07">ESCUELA NORMAL DE LICENCIATURA EN EDUCACION FISICA</option>
+								<option value="08">ESCUELA NORMAL DE LICENCIATURA EN EDUCACIÓN PRIMARIA</option>
+								<option value="09">ESCUELA NORMAL DE LICENCIATURA EN EDUCACIÓN PRIMARIA (MÓDULO HOPELCHÉN)</option>
+								<option value="10">ESCUELA NORMAL RURAL DE LICENCIATURA EN EDUCACION PRIMARIA JUSTO SIERRA MENDEZ</option>
+								<option value="11">ESCUELA NORMAL DE LICENCIATURA EN EDUCACIÓN PRIMARIA "ESCÁRCEGA"</option>
+								<option value="12">ESCUELA NORMAL DE LICENCIATURA EN EDUCACIÓN PRIMARIA "INSTITUTO MORELOS"</option>
+								<option value="13">ESCUELA NORMAL DE LICENCIATURA EN EDUCACIÓN PRIMARIA "INSTITUTO MORELOS"</option>
+								<option value="14">ESCUELA NORMAL SUPERIOR FEDERAL DE CAMPECHE</option>
+								<option value="15">ESCUELA NORMAL SUPERIOR PROFR. SALOMON BARRANCOS AGUILAR INSTITUTO CAMPECHANO</option>
+								<option value="16">UPN 041 "MARIA LAVALLE URBINA"</option>
+								<option value="17">UPN 042</option>
+							</select>
+						</li>
+						<li>
+							<label for="nombre">Nombre</label><br>
+							<input type= "text" id="nombre" required >
+						</li>
+						<li>
+							<label for="curso">Curso</label><br>
+							<input type="text" name="curso" id="curso">
+						</li>
+						<li>
+							<label for="semestre">Semestre</label><br>
+							<select name="semestre" id="semestre">
+								<option value="" selected disabled>Elija semestre</option>
+								<option value="01">1er Semestre </option>
+								<option value="02">2do Semestre </option>
+								<option value="03">3er Semestre </option>
+								<option value="04">4to Semestre </option>
+								<option value="05">5to Semestre </option>
+								<option value="06">6to Semestre </option>
+								<option value="07">7mo Semestre </option>
+								<option value="08">8vo Semestre </option>
+								<option value="09">9no Semestre </option>
+								<option value="10">10mo Semestre </option>
+								<option value="11">11vo Semestre </option>
+							</select>
+						</li>
+						<li>
+							<label for="num-est">Num. estudiantes</label><br>
+							<input type="number" min="1" max="35" name="num-est" id="num-est">
+						</li>
+					</ul>
+
+				</form>
+			</section>
+			<label for="lb-programas"><h3>I. Programas y desarrollo profesional de los estudiantes</h3></label>
+			<input type="checkbox" id="lb-programas" class="oculto" />
+			<section class="programas">
+				<input type="checkbox" id="lb-comp01" class="oculto" />
+				<article class="competencias c-01">
+					<table class="tabla">
+						<tr>
+
+							<th colspan="2">
+								<label for="lb-comp01">Competencia 01</label>
+
+							</th>
+						</tr>
+						<tr>
+							<td  colspan="2">1. El docente revisa críticamente los programas de educación superior para la formación de docentes.
+							</td>
+						</tr>
+						<tr>
+							<th >Unidad de competencia</th>
+							<th >Grado de dominio</th>
+						</tr>
+						<tr>
+							<td class="col-competencia">a. Conozco en profundidad los programas de las licenciaturas del sistema de escuelas normales.
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-competencia">b. Reviso y comparo modelos de formación de docentes.</td>
+							<td class="col-dominio">
+									<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-competencia">c. Contextualizo las propuestas curriculares.
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-competencia">d. Utilizo mecanismos para revisar mi propia práctica docente.
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-competencia">e. Escucho las opiniones de otros colegas sobre la práctica docente
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-competencia">f. Incorporo cambios y pruebo nuevas estrategias.
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</article>
+				<input type="checkbox" id="lb-comp02" class="oculto" />
+				<article class="competencias c-02">
+					<table class="tabla">
+						<tr>
+							<th colspan="2">
+
+								<label for="lb-comp02">Competencia 02</label>
+
+							</th>
+						</tr>
+						<tr>
+							<td  colspan="2">2. El docente planea situaciones didácticas, aplicando sus conocimientos pedagógicos y disciplinares para responderá las necesidades del contexto sociocultural en el marco de los planes y programas de educación normal y educación básica.
+							</td>
+						</tr>
+						<tr>
+							<th >Unidad de competencia</th>
+							<th >Grado de dominio</th>
+						</tr>
+						<tr>
+							<td class="col-competencia">a. Realizo un diagnóstico sobre los intereses y necesidades formativas de los estudiantes para organizar las actividades de aprendizaje
+							</td>
+							<td class="col-dominio">
+								<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</article>
+			</section>
+			<label for="lb-actividades"><h3>II. Actividades institucionales</h3></label>
+			<input type="checkbox" id="lb-actividades" class="oculto" />
+			<section class="actividades">
+				<article class="competencias">
+					<p>
+						Competencia 07
+					</p>
+					<p>
+						El docente realiza actividades de tutoría para apoyar la formación integral de sus estudiantes.
+					</p>
+					<p>
+						Unidades de competencia:
+					</p>
+					<ol>
+						<li>
+							a. Reconozco la tutoría como una actividad sustancial para mejorar el rendimiento académico de los y las estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+						<li>
+							b. Realizo un diagnóstico personalizado sobre los intereses y necesidades formativas de los estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+						<li>
+							c. Elaboro un plan personalizado de la trayectoria de formación profesional junto con los estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+						<li>
+							d. Utilizo un portafolio para dar seguimiento a la trayectoria de formación profesional de los estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+						<li>
+							e. Converso con otros docentes sobre las trayectorias de formación profesional de los estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+						<li>
+							f. Evalúo el proceso de la acción tutoral con el desempeño académico de los estudiantes.<br>
+							<label>Grado de dominio:</label>
+							<select>
+									<option value="" selected disabled>Elija...</option>
+							  		<option value="Muy Bueno">Muy Bueno</option>
+							  		<option value="Puede Mejorar">Puede Mejorar</option>
+							 		<option value="Requiere Mejorar">Requiere mejorar</option>
+							</select>
+						</li>
+					</ol>
+				</article>
+			</section>
+		</section>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+body {
+  font-size: 16px;
+  font-family: cursive;
+}
+header {
+  background: #de3737;
+  display: table;
+  height: 5em;
+  border-bottom: 5px solid rgba(0,0,0,0.5);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header h1 {
+  color: #fff;
+  display: table-cell;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  vertical-align: middle;
+  text-shadow: 2px 0px 0px #000;
+}
+.contenedor {
+  background: #4d93a3;
+  margin: 0 auto;
+  max-width: 980px;
+  min-width: 320px;
+  padding-bottom: 0.15em;
+}
+.contenedor h2 {
+  background: #cedce7;
+  background: -moz-linear-gradient(top, #cedce7 0%, #596a72 90%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cedce7), color-stop(90%, #596a72));
+  background: -webkit-linear-gradient(top, #cedce7 0%, #596a72 90%);
+  background: -o-linear-gradient(top, #cedce7 0%, #596a72 90%);
+  background: -ms-linear-gradient(top, #cedce7 0%, #596a72 90%);
+  background: linear-gradient(to bottom, #cedce7 0%, #596a72 90%);
+  border-radius: 0 45px 0 0;
+  margin: 0;
+  padding: 0.25em 0.5em;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.25em;
+}
+.contenedor h2:hover,
+.contenedor h3:hover,
+.contenedor .programas label:hover {
+  cursor: pointer;
+}
+.contenedor h3 {
+  border-bottom: 1px dashed #808080;
+  font-family: Kalam;
+  font-size: 1.1em;
+  margin: 0 0 0.5em 0;
+  padding: 0.25em 1.25em;
+}
+.contenedor .autoevaluacion {
+  height: 2px;
+  overflow: hidden;
+}
+.contenedor .autoevaluacion #fr-cuestionario {
+  background: #808080;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 5px 0px rgba(50,50,50,0.75);
+  margin: 0 auto;
+  padding: 0.5em;
+  font-family: Kalam;
+  font-size: 0.9em;
+}
+.contenedor .autoevaluacion #fr-cuestionario #escuela {
+  width: 95%;
+}
+.contenedor .autoevaluacion #fr-cuestionario #nombre,
+.contenedor .autoevaluacion #fr-cuestionario #curso,
+.contenedor .autoevaluacion #fr-cuestionario #semestre {
+  width: 95%;
+}
+.contenedor .autoevaluacion #fr-cuestionario #num-est {
+  width: 50%;
+  color: #008000;
+}
+.contenedor .autoevaluacion #fr-cuestionario .datos-gral {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.contenedor .autoevaluacion #fr-cuestionario .datos-gral li {
+  width: 100%;
+  display: block;
+}
+.contenedor .autoevaluacion #fr-cuestionario .datos-gral li:last-child {
+  width: 40%;
+  display: inline-block;
+}
+.contenedor .autoevaluacion #fr-cuestionario .datos-gral li:nth-child(4) {
+  display: inline-block;
+  width: 55%;
+}
+.contenedor .autoevaluacion .actividades {
+  font-family: Kalam;
+  margin: 0;
+  padding: 0 0.5em;
+}
+.contenedor .autoevaluacion .actividades p {
+  margin: 0;
+  padding: 0 0.5em;
+}
+.contenedor .autoevaluacion .actividades p:first-child {
+  font-weight: bold;
+  text-align: center;
+  background: rgba(51,80,51,0.4);
+}
+.contenedor .autoevaluacion .actividades p:nth-child(2) {
+  text-align: justify;
+  background: #808080;
+}
+.contenedor .autoevaluacion .actividades p:nth-child(3) {
+  background: rgba(51,80,51,0.4);
+  font-weight: bold;
+}
+.contenedor .autoevaluacion .actividades ol {
+  background: rgba(51,120,51,0.4);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: justify;
+}
+.contenedor .autoevaluacion .actividades ol li {
+  padding: 0.25em 0.5em;
+  border-bottom: 1px solid #fff;
+}
+.contenedor .autoevaluacion .actividades ol li:last-child {
+  border-bottom: none;
+}
+.contenedor .autoevaluacion .actividades select {
+  padding: 0;
+  height: 1.8em;
+  font-size: 0.8em;
+  background: rgba(51,85,51,0.4);
+  border-radius: 0.8em;
+  line-height: 10px;
+}
+.contenedor .autoevaluacion .datos,
+.contenedor .autoevaluacion .programas,
+.contenedor .autoevaluacion .actividades {
+  height: 0px;
+  margin: 0;
+  padding: 0em 0.5em;
+  overflow: hidden;
+}
+.contenedor .autoevaluacion .programas .c-01,
+.contenedor .autoevaluacion .programas .c-02 {
+  height: 2.5em;
+  overflow: hidden;
+}
+.contenedor .competencias {
+  margin: 0 0.5em;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px 0px rgba(50,50,50,0.75);
+  margin-bottom: 1em;
+  padding: 0;
+}
+.contenedor .oculto {
+  display: none;
+}
+.contenedor .oculto:checked + .actividades,
+.contenedor .oculto:checked + .introduccion,
+.contenedor .oculto:checked + .autoevaluacion,
+.contenedor .oculto:checked + .datos,
+.contenedor .oculto:checked + .programas,
+.contenedor .oculto:checked + .c-01,
+.contenedor .oculto:checked + .c-02 {
+  height: 100%;
+}
+.contenedor .introduccion {
+  height: 2px;
+  overflow: hidden;
+}
+.contenedor .introduccion figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.contenedor .introduccion figure .diagrama {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 5px 0px rgba(50,50,50,0.75);
+  margin: 0.5em 0 0 0;
+  width: 300px;
+}
+.contenedor .introduccion .parrafos {
+  margin: 0;
+  padding: 0 0.5em;
+}
+.contenedor .introduccion .parrafos p,
+.contenedor .introduccion .parrafos .lista {
+  margin: 0;
+  font-family: Kalam;
+  text-align: justify;
+}
+.contenedor .tabla {
+  font-family: Kalam;
+  width: 100%;
+}
+.contenedor .tabla tr:nth-child(3) th:first-child {
+  border-right: 1px solid #fff;
+}
+.contenedor .tabla tr:nth-child(n+4) {
+  border-bottom: 1px solid #fff;
+}
+.contenedor .tabla tr:first-child th {
+  border-radius: 10px 10px 0 0;
+}
+.contenedor .tabla tr:last-child {
+  border-bottom: 0px solid #fff;
+}
+.contenedor .tabla tr:last-child td:first-child {
+  color: #ff0;
+  border-radius: 0px 0px 0px 10px;
+}
+.contenedor .tabla tr:last-child td:last-child {
+  border-radius: 0px 0px 10px 0px;
+}
+.contenedor .tabla th,
+.contenedor .tabla td {
+  padding: 0.5em;
+}
+.contenedor .tabla td[colspan="2"] {
+  background: #808080;
+}
+.contenedor .tabla td {
+  background: rgba(51,120,51,0.4);
+  text-align: justify;
+}
+.contenedor .tabla th {
+  background: rgba(51,85,51,0.4);
+  color: #fff;
+}
+.contenedor .tabla .col-dominio {
+  background: #808080;
+  border-left: 1px solid #fff;
+}
